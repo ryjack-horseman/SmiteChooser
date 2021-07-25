@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SmiteChooser</string>
+    <string name="title_text">Welcome to SmiteChooser</string>
+    <string name="add_friends">Add Friends you play with for easy sessions later!</string>
+    <string name="add_friends_btn">Add Friend</string>
+    <string name="start_session_btn">Start Session</string>
+    <string name="add_player_to_session">Add player to your session</string>
+    <string name="player_num_title">Player Count</string>
+    <string name="player_num">0</string>
+    <string name="add_friend_activity_title">Add new friends so you can select them for your next session!</string>
+</resources>
