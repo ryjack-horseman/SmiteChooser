@@ -5,9 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import com.example.smitechooser.databinding.ActivityMainBinding
 
-var friendButton: Button? = null
-var startButton: Button? = null
+private lateinit var binding: ActivityMainBinding
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -20,15 +21,15 @@ class MainActivity : AppCompatActivity() {
 
 
     fun initView(){
-        setContentView(R.layout.activity_main)
-        friendButton = findViewById<Button>(R.id.addFriendButton)
-        friendButton!!.setOnClickListener(listener)
-        startButton = findViewById(R.id.startSessionBtn)
-        startButton!!.setOnClickListener(listener)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+        binding.addFriendButton.setOnClickListener(btnListener)
+        binding.startSessionBtn.setOnClickListener(btnListener)
         //load db to populate the spinner
 
     }
-    val listener= View.OnClickListener { view ->
+    val btnListener= View.OnClickListener { view ->
         when (view.getId()) {
             R.id.addFriendButton -> {
                 val intent = Intent(this, AddFriendActivity::class.java)
