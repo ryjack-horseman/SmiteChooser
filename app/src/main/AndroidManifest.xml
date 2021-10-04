@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmiteChooser">
         <activity android:name=".AddFriendActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".CreateSession">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

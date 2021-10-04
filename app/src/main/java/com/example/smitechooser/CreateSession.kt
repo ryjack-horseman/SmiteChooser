@@ -11,7 +11,7 @@ private lateinit var binding: ActivityMainBinding
 
 
 
-class MainActivity : AppCompatActivity() {
+class CreateSession : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
